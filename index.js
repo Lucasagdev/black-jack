@@ -1,0 +1,57 @@
+async function baralhoDeCartas() {
+    const url = "https://www.deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6"
+    const resposta = await fetch(url)
+    return await resposta.json()
+}
+
+async function comprarUmaCarta(deck_id) {
+    const url = `https://www.deckofcardsapi.com/api/deck/${deck_id}/draw/?count=6`
+    const resposta = await fetch(url)
+    return await resposta.json()
+}
+
+baralhoDeCartas()
+
+async function primeiraCarta() {
+    const baralho = await baralhoDeCartas()
+    const carta = await comprarUmaCarta(baralho.deck_id)
+    const imagemCarta = carta.cards[0].image
+    document.getElementById('carta-1').src = imagemCarta
+
+}
+
+async function virarCarta(){
+    const versoCarta = './verso-carta.png'
+    document.getElementById('carta-1').src = versoCarta
+    
+}
+async function segundaCarta() {
+    const baralho = await baralhoDeCartas()
+    const carta = await comprarUmaCarta(baralho.deck_id)
+    const imagemCarta = carta.cards[0].image
+    document.getElementById('carta-2').src = imagemCarta
+
+}
+async function terceiraCarta() {
+    const baralho = await baralhoDeCartas()
+    const carta = await comprarUmaCarta(baralho.deck_id)
+    const imagemCarta = carta.cards[0].image
+    document.getElementById('carta-3').src = imagemCarta
+
+}
+async function quartaCarta() {
+    const baralho = await baralhoDeCartas()
+    const carta = await comprarUmaCarta(baralho.deck_id)
+    const imagemCarta = carta.cards[0].image
+    document.getElementById('carta-4').src = imagemCarta
+
+}
+async function quintaCarta() {
+    const baralho = await baralhoDeCartas()
+    const carta = await comprarUmaCarta(baralho.deck_id)
+    const imagemCarta = carta.cards[0].image
+    document.getElementById('carta-5').src = imagemCarta
+
+}
+
+baralhoEmbaralhado()

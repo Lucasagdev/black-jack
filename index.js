@@ -12,19 +12,33 @@ async function comprarUmaCarta(deck_id) {
 
 baralhoDeCartas()
 
+let imagemFrente = '';
+let mostrandoFrente = true;
+
 async function primeiraCarta() {
-    const baralho = await baralhoDeCartas()
-    const carta = await comprarUmaCarta(baralho.deck_id)
-    const imagemCarta = carta.cards[0].image
-    document.getElementById('carta-1').src = imagemCarta
+    const baralho = await baralhoDeCartas();
+    const carta = await comprarUmaCarta(baralho.deck_id);
+    imagemFrente = carta.cards[0].image;
 
-}
-
-async function virarCarta(){
-    const versoCarta = './verso-carta.png'
-    document.getElementById('carta-1').src = versoCarta
+    const cartaElemento = document.getElementById('carta-1');
     
+    cartaElemento.src = imagemFrente;
+    mostrandoFrente = true;
 }
+
+function virarCarta() {
+    const cartaElemento = document.getElementById('carta-1');
+    const versoCarta = './verso-carta.png';
+
+    if (mostrandoFrente) {
+        cartaElemento.src = versoCarta;
+        mostrandoFrente = false;
+    } else {
+        cartaElemento.src = imagemFrente;
+        mostrandoFrente = true;
+    }
+}
+
 async function segundaCarta() {
     const baralho = await baralhoDeCartas()
     const carta = await comprarUmaCarta(baralho.deck_id)
@@ -53,5 +67,3 @@ async function quintaCarta() {
     document.getElementById('carta-5').src = imagemCarta
 
 }
-
-baralhoEmbaralhado()

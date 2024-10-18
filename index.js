@@ -28,7 +28,7 @@ async function primeiraCarta() {
 
 function virarCarta() {
     const cartaElemento = document.getElementById('carta-1');
-    const versoCarta = './verso-carta.png';
+    const versoCarta = './imagens/verso-carta.png';
 
     if (mostrandoFrente) {
         cartaElemento.src = versoCarta;
@@ -84,7 +84,7 @@ async function primeiraCarta2() {
 
 function virarCarta2() {
     const cartaElemento = document.getElementById('carta-1-2');
-    const versoCarta = './verso-carta.png';
+    const versoCarta = './imagens/verso-carta.png';
 
     if (mostrandoFrente2) {
         cartaElemento.src = versoCarta;

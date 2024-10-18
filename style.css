@@ -1,0 +1,13 @@
+.cabecalho {
+    background-color: bisque;
+    text-align: center;
+}
+
+.logo-bj {
+    width: 300px;
+    height: 250px;
+}
+
+.jogo {
+    background-color: azure;
+}

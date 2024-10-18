@@ -8,48 +8,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Black Jack</h1>
+    <header class="cabecalho">
+        <img class="logo-bj" src="./imagens/logo-black-jack.png" alt="">
+    </header>
+    <main class="jogo">
+        <h2>Jogador 1</h2>
 
-    <h2>Jogador 1</h2>
+        <div>
+            
+            <img id="carta-1" src="" alt="Carta">
+            <button onclick="primeiraCarta()">Próxima carta</button>
+            <button onclick="virarCarta()">Virar Carta</button>
 
-    <div>
-        
-        <img id="carta-1" src="" alt="Carta">
-        <button onclick="primeiraCarta()">Próxima carta</button>
-        <button onclick="virarCarta()">Virar Carta</button>
+            <img id="carta-2" src="" alt="Carta">
+            <button onclick="segundaCarta()">Próxima carta</button>
 
-        <img id="carta-2" src="" alt="Carta">
-        <button onclick="segundaCarta()">Próxima carta</button>
+            <img id="carta-3" src="" alt="Carta">
+            <button onclick="terceiraCarta()">Próxima carta</button>
 
-        <img id="carta-3" src="" alt="Carta">
-        <button onclick="terceiraCarta()">Próxima carta</button>
+            <img id="carta-4" src="" alt="Carta">
+            <button onclick="quartaCarta()">Próxima carta</button>
 
-        <img id="carta-4" src="" alt="Carta">
-        <button onclick="quartaCarta()">Próxima carta</button>
+            <img id="carta-5" src="" alt="Carta">
+            <button onclick="quintaCarta()">Próxima carta</button>
+        </div>
 
-        <img id="carta-5" src="" alt="Carta">
-        <button onclick="quintaCarta()">Próxima carta</button>
-    </div>
+        <h2>Jogador 2</h2>
 
-    <h2>Jogador 2</h2>
+        <div>
+            <img id="carta-1-2" src="" alt="Carta">
+            <button onclick="primeiraCarta2()">Próxima carta</button>
+            <button onclick="virarCarta2()">Virar Carta</button>
 
-    <div>
-        <img id="carta-1-2" src="" alt="Carta">
-        <button onclick="primeiraCarta2()">Próxima carta</button>
-        <button onclick="virarCarta2()">Virar Carta</button>
+            <img id="carta-2-2" src="" alt="Carta">
+            <button onclick="segundaCarta2()">Próxima carta</button>
 
-        <img id="carta-2-2" src="" alt="Carta">
-        <button onclick="segundaCarta2()">Próxima carta</button>
+            <img id="carta-3-2" src="" alt="Carta">
+            <button onclick="terceiraCarta2()">Próxima carta</button>
 
-        <img id="carta-3-2" src="" alt="Carta">
-        <button onclick="terceiraCarta2()">Próxima carta</button>
+            <img id="carta-4-2" src="" alt="Carta">
+            <button onclick="quartaCarta2()">Próxima carta</button>
 
-        <img id="carta-4-2" src="" alt="Carta">
-        <button onclick="quartaCarta2()">Próxima carta</button>
+            <img id="carta-5-2" src="" alt="Carta">
+            <button onclick="quintaCarta2()">Próxima carta</button>
+        </div>
 
-        <img id="carta-5-2" src="" alt="Carta">
-        <button onclick="quintaCarta2()">Próxima carta</button>
-    </div>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>

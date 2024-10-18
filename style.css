@@ -9,5 +9,10 @@
 }
 
 .jogo {
-    background-color: azure;
+    text-align: center;
+}
+
+.carta-img {
+    width: 250px;
+    height: 350px;
 }

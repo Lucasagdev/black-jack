@@ -19,11 +19,12 @@ async function primeiraCarta() {
     const baralho = await baralhoDeCartas();
     const carta = await comprarUmaCarta(baralho.deck_id);
     imagemFrente = carta.cards[0].image;
-
+    
     const cartaElemento = document.getElementById('carta-1');
     
     cartaElemento.src = imagemFrente;
     mostrandoFrente = true;
+    document.getElementById('carta-1').classList.remove("transparencia")
 }
 
 function virarCarta() {
@@ -44,28 +45,28 @@ async function segundaCarta() {
     const carta = await comprarUmaCarta(baralho.deck_id)
     const imagemCarta = carta.cards[0].image
     document.getElementById('carta-2').src = imagemCarta
-
+    document.getElementById('carta-1').classList.remove("transparencia")
 }
 async function terceiraCarta() {
     const baralho = await baralhoDeCartas()
     const carta = await comprarUmaCarta(baralho.deck_id)
     const imagemCarta = carta.cards[0].image
     document.getElementById('carta-3').src = imagemCarta
-
+    document.getElementById('carta-1').classList.remove("transparencia")
 }
 async function quartaCarta() {
     const baralho = await baralhoDeCartas()
     const carta = await comprarUmaCarta(baralho.deck_id)
     const imagemCarta = carta.cards[0].image
     document.getElementById('carta-4').src = imagemCarta
-
+    document.getElementById('carta-1').classList.remove("transparencia")
 }
 async function quintaCarta() {
     const baralho = await baralhoDeCartas()
     const carta = await comprarUmaCarta(baralho.deck_id)
     const imagemCarta = carta.cards[0].image
     document.getElementById('carta-5').src = imagemCarta
-
+    document.getElementById('carta-1').classList.remove("transparencia")
 }
 
 let imagemFrente2 = '';
@@ -80,6 +81,7 @@ async function primeiraCarta2() {
     
     cartaElemento.src = imagemFrente2;
     mostrandoFrente2 = true;
+    document.getElementById('carta-1').classList.remove("transparencia")
 }
 
 function virarCarta2() {
@@ -100,26 +102,26 @@ async function segundaCarta2() {
     const carta = await comprarUmaCarta(baralho.deck_id)
     const imagemCarta = carta.cards[0].image
     document.getElementById('carta-2-2').src = imagemCarta
-
+    document.getElementById('carta-1').classList.remove("transparencia")
 }
 async function terceiraCarta2() {
     const baralho = await baralhoDeCartas()
     const carta = await comprarUmaCarta(baralho.deck_id)
     const imagemCarta = carta.cards[0].image
     document.getElementById('carta-3-2').src = imagemCarta
-
+    document.getElementById('carta-1').classList.remove("transparencia")
 }
 async function quartaCarta2() {
     const baralho = await baralhoDeCartas()
     const carta = await comprarUmaCarta(baralho.deck_id)
     const imagemCarta = carta.cards[0].image
     document.getElementById('carta-4-2').src = imagemCarta
-
+    document.getElementById('carta-1').classList.remove("transparencia")
 }
 async function quintaCarta2() {
     const baralho = await baralhoDeCartas()
     const carta = await comprarUmaCarta(baralho.deck_id)
     const imagemCarta = carta.cards[0].image
     document.getElementById('carta-5-2').src = imagemCarta
-
+    document.getElementById('carta-1').classList.remove("transparencia")
 }

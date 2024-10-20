@@ -1,5 +1,9 @@
+body {
+    background-image: url(./imagens/background-site.jpg);
+    background-size: cover;
+}
+
 .cabecalho {
-    background-color: bisque;
     text-align: center;
 }
 
@@ -12,7 +16,37 @@
     text-align: center;
 }
 
+.jogadores button {
+    margin: 20px;
+}
+
 .carta-img {
     width: 250px;
     height: 350px;
+    border-radius: 5px;
+}
+
+.transparencia{
+    opacity: 0.3;
+}
+
+.transparencia:hover{
+    opacity: 0.6;
+}
+
+.botao-proxima {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.virar-carta {
+    height: 50px;
+    border-radius: 20px;
+    background-color: #00bd2f;
+}
+
+.jogadores .virar-carta{
+
 }

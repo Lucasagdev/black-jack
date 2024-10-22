@@ -7,6 +7,24 @@ body {
     text-align: center;
 }
 
+.posicao-titulo {
+    
+    justify-content: center;
+    display: flex;
+}
+
+.titulo-jogadores {
+    color: white;
+    background-color: rgb(49, 155, 67);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    width: 150px;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5em;
+}
+
 .logo-bj {
     width: 300px;
     height: 250px;
@@ -23,4 +41,27 @@ body {
 .carta-img {
     width: 250px;
     height: 350px;
+    border-radius: 5px;
+}
+
+.transparencia{
+    opacity: 0.3;
+}
+
+.transparencia:hover{
+    opacity: 0.6;
+}
+
+.botao-proxima {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.virar-carta {
+    color: white;
+    background-color: #00bd2f;
+    height: 50px;
+    border-radius: 20px;
 }

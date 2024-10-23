@@ -30,10 +30,11 @@ async function primeiraCarta() {
 function virarCarta() {
     const cartaElemento = document.getElementById('carta-1');
     const versoCarta = './imagens/verso-carta.png';
+    document.getElementById('carta-1').classList.remove("transparencia")
 
     if (mostrandoFrente) {
         cartaElemento.src = versoCarta;
-        mostrandoFrente = false;
+        mostrandoFrente = true;
     } else {
         cartaElemento.src = imagemFrente;
         mostrandoFrente = true;
@@ -87,10 +88,11 @@ async function primeiraCarta2() {
 function virarCarta2() {
     const cartaElemento = document.getElementById('carta-1-2');
     const versoCarta = './imagens/verso-carta.png';
+    document.getElementById('carta-1-2').classList.remove("transparencia")
 
     if (mostrandoFrente2) {
         cartaElemento.src = versoCarta;
-        mostrandoFrente2 = false;
+        mostrandoFrente2 = true;
     } else {
         cartaElemento.src = imagemFrente2;
         mostrandoFrente2 = true;

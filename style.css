@@ -34,7 +34,19 @@ body {
     text-align: center;
 }
 
-.jogadores button {
+.posicao-virar-carta {
+    
+    align-items: center;
+    display: flex;
+}
+
+.jogadores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogadores .botao-proxima {
     margin: 20px;
 }
 
@@ -62,6 +74,6 @@ body {
 .virar-carta {
     color: white;
     background-color: #00bd2f;
-    height: 50px;
-    border-radius: 20px;
+    height: 100px;
+    border-radius: 10px;
 }

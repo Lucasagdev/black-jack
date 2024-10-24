@@ -1,3 +1,7 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 body {
     background-image: url(./imagens/background-site.jpg);
     background-size: cover;
@@ -16,7 +20,6 @@ body {
 .titulo-jogadores {
     color: white;
     background-color: rgb(49, 155, 67);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
     width: 150px;
     align-items: center;
@@ -26,8 +29,8 @@ body {
 }
 
 .logo-bj {
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
 }
 
 .jogo {
@@ -35,7 +38,6 @@ body {
 }
 
 .posicao-virar-carta {
-    
     align-items: center;
     display: flex;
 }
@@ -44,6 +46,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .jogadores .botao-proxima {

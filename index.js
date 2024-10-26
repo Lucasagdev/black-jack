@@ -12,7 +12,7 @@ async function comprarUmaCarta(deck_id) {
 
 baralhoDeCartas()
 
-let imagemFrente = '';
+let imagemFrente = './imagens/fundo-cartas.png';
 let mostrandoFrente = true;
 
 async function primeiraCarta() {
@@ -34,7 +34,7 @@ function virarCarta() {
 
     if (mostrandoFrente) {
         cartaElemento.src = versoCarta;
-        mostrandoFrente = true;
+        mostrandoFrente = false;
     } else {
         cartaElemento.src = imagemFrente;
         mostrandoFrente = true;
@@ -70,7 +70,7 @@ async function quintaCarta() {
     document.getElementById('carta-5').classList.remove("transparencia")
 }
 
-let imagemFrente2 = '';
+let imagemFrente2 = './imagens/fundo-cartas.png';
 let mostrandoFrente2 = true;
 
 async function primeiraCarta2() {
@@ -92,7 +92,7 @@ function virarCarta2() {
 
     if (mostrandoFrente2) {
         cartaElemento.src = versoCarta;
-        mostrandoFrente2 = true;
+        mostrandoFrente2 = false;
     } else {
         cartaElemento.src = imagemFrente2;
         mostrandoFrente2 = true;

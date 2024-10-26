@@ -46,6 +46,8 @@ body {
 .posicao-virar-carta span {
     color: white;
     cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 35px;
 }
 
 .jogadores {

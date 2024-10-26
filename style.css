@@ -26,6 +26,8 @@ body {
     padding: 5px;
     border: 1px solid black;
     border-radius: 5em;
+    user-select: none;
+    cursor: default;
 }
 
 .logo-bj {
@@ -48,6 +50,8 @@ body {
     cursor: pointer;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 35px;
+    user-select: none;
+    cursor: default;
 }
 
 .jogadores {

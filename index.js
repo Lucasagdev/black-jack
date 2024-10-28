@@ -38,6 +38,7 @@ function virarCarta() {
     } else {
         cartaElemento.src = imagemFrente;
         mostrandoFrente = true;
+        document.getElementById('carta-1').classList.add("transparencia")
     }
 }
 
@@ -96,6 +97,7 @@ function virarCarta2() {
     } else {
         cartaElemento.src = imagemFrente2;
         mostrandoFrente2 = true;
+        document.getElementById('carta-1-2').classList.add("transparencia")
     }
 }
 

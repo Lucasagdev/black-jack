@@ -10,6 +10,10 @@ async function comprarUmaCarta(deck_id) {
     return await resposta.json()
 }
 
+function botaoRecarregar() {
+    window.location.reload()
+}
+
 baralhoDeCartas()
 
 let imagemFrente = './imagens/fundo-cartas.png';
@@ -38,7 +42,7 @@ function virarCarta() {
     } else {
         cartaElemento.src = imagemFrente;
         mostrandoFrente = true;
-        document.getElementById('carta-1').classList.add("transparencia")
+        
     }
 }
 
@@ -97,7 +101,6 @@ function virarCarta2() {
     } else {
         cartaElemento.src = imagemFrente2;
         mostrandoFrente2 = true;
-        document.getElementById('carta-1-2').classList.add("transparencia")
     }
 }
 

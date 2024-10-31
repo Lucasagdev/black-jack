@@ -100,6 +100,11 @@ body {
     border: none;
     padding: 0;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-proxima:hover {
+    transform: scale(0.98);
 }
 
 .virar-carta {

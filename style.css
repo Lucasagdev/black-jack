@@ -21,8 +21,8 @@ body {
 }
 
 .fab:hover {
-    color: rgb(160, 54, 40);
-    transform: scale(0.9);
+    color: rgb(122, 52, 52);
+    transform: scale(0.93);
 }
 
 .links, .botao-reiniciar {
@@ -41,7 +41,7 @@ body {
     width: 160px;
     align-items: center;
     padding: 5px;
-    border: 1px solid black;
+    border: px solid black;
     border-radius: 5em;
     user-select: none;
     cursor: default;
@@ -136,10 +136,10 @@ body {
     font-weight: 600;
     align-items: center;
     padding: 5px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5em;
     user-select: none;
     cursor: pointer;
+    border: none;
+    border-radius: 5em;
     transition: 0.3s;
 }
 

@@ -120,11 +120,11 @@ body {
 }
 
 .posicao-virar-carta {
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .posicao-virar-carta:hover {
-    transform: scale(0.9);
+    transform: rotateY(360deg);
 }
 
 .botao-reiniciar {

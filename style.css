@@ -13,6 +13,11 @@ body {
     justify-content: space-around;
 }
 
+.logo-bj {
+    width: 250px;
+    height: 200px;
+}
+
 .links .fab {
     color: rgb(0, 255, 115);
     font-size: 60px;
@@ -29,6 +34,26 @@ body {
     margin-top: 70px;
 }
 
+.botao-reiniciar {
+    color: white;
+    background-color: rgb(63, 136, 37);
+    width: 150px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5em;
+    transition: 0.3s;
+}
+
+.botao-reiniciar:hover {
+    transform: scale(0.95);
+}
+
 .posicao-titulo {
     justify-content: center;
     display: flex;
@@ -41,15 +66,9 @@ body {
     width: 160px;
     align-items: center;
     padding: 5px;
-    border: px solid black;
     border-radius: 5em;
     user-select: none;
     cursor: default;
-}
-
-.logo-bj {
-    width: 250px;
-    height: 200px;
 }
 
 .jogo {
@@ -128,22 +147,3 @@ body {
 }
 
 
-.botao-reiniciar {
-    color: white;
-    background-color: rgb(63, 136, 37);
-    width: 150px;
-    height: 100px;
-    font-size: 20px;
-    font-weight: 600;
-    align-items: center;
-    padding: 5px;
-    user-select: none;
-    cursor: pointer;
-    border: none;
-    border-radius: 5em;
-    transition: 0.3s;
-}
-
-.botao-reiniciar:hover {
-    transform: scale(0.95);
-}
